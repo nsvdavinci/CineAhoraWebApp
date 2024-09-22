@@ -4,7 +4,6 @@ import { Layout } from "../components/Layout";
 import { ErrorPage, HomePage } from "../pages";
 
 export const RoutesProvider = () => {
-  console.log("PATHS", PATHS);
   return (
     <BrowserRouter>
       <Routes>
