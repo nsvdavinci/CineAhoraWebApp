@@ -27,7 +27,9 @@ const Header: React.FC = () => {
           <span>Sobre nosotros</span>
         </Link>
       </div>
-      <UserIcon fill={colorMap.WHITE} />
+      <Link to={PATHS.PROFILE}>
+        <UserIcon fill={colorMap.WHITE} />
+      </Link>
     </nav>
   );
 };
