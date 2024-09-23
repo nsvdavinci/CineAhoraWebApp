@@ -4,9 +4,11 @@ import { Header, Footer } from "../";
 
 const Layout: React.FC = () => {
   return (
-    <div className="bg-black">
+    <div className="flex flex-col bg-black min-w-fit min-h-screen">
       <Header />
-      <Outlet />
+      <div className="container flex-1">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
