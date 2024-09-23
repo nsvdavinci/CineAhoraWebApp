@@ -1,6 +1,10 @@
+import { Offer1, Offer2, Offer3 } from "@/assets";
 import NOW_PLAYING from "@/assets/rawData/now_playing.json";
 import UPCOMING from "@/assets/rawData/UPCOMING.json";
+import { Carousel } from "@/components";
 import { Movie } from "@/models";
+
+const slides = [Offer1, Offer2, Offer3];
 
 const ListOfMovies: React.FC<{
   title: string;
@@ -30,7 +34,9 @@ export const HomePage: React.FC = () => {
   return (
     <div>
       {/* Carousel */}
-      <div></div>
+      <div className="mb-4">
+        <Carousel slides={slides} />
+      </div>
       {/* Lista de peliculas cartelera */}
       <ListOfMovies
         className="mb-16"
