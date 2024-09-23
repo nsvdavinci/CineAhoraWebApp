@@ -1,9 +1,9 @@
 import React from "react";
-import { logo, UserIcon } from "../../assets";
-import { colorMap } from "../../constants";
+import { logo, UserIcon } from "@/assets";
+import { colorMap } from "@/constants";
 import { Link } from "react-router-dom";
-import { PATHS } from "../../routes/routes";
-import { Sidebar } from "../Sidebar";
+import { PATHS } from "@/routes";
+import { Sidebar } from "@/components";
 
 const getRoutes = () => {
   return (

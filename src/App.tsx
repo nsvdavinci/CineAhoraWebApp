@@ -1,4 +1,4 @@
-import { RoutesProvider } from "./routes";
+import { RoutesProvider } from "@/routes";
 
 function AppProvider() {
   console.log("entre aqui");

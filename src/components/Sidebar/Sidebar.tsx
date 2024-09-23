@@ -1,9 +1,8 @@
 import React from "react";
-import { BarIcon } from "../../assets";
-import { colorMap } from "../../constants";
-import { PATHS } from "../../routes/routes";
+import { BarIcon, XCircleIcon } from "@/assets";
+import { colorMap } from "@/constants";
+import { PATHS } from "@/routes";
 import { Link } from "react-router-dom";
-import XCircleIcon from "../../assets/icons/x-circle-icon";
 
 export const Sidebar: React.FC<{
   routes: React.ReactNode;

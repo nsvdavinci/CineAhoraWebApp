@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Header, Footer } from "../";
+import { Header, Footer } from "@/components";
 
 const Layout: React.FC = () => {
   return (
