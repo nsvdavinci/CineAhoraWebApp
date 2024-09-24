@@ -1,7 +1,7 @@
 import { Offer1, Offer2, Offer3 } from "@/assets";
 import NOW_PLAYING from "@/assets/rawData/now_playing.json";
 import UPCOMING from "@/assets/rawData/UPCOMING.json";
-import { Carousel } from "@/components";
+import { Card, Carousel } from "@/components";
 import { Movie } from "@/models";
 
 const slides = [Offer1, Offer2, Offer3];
@@ -17,14 +17,7 @@ const ListOfMovies: React.FC<{
       <div className="flex flex-wrap gap-x-4 gap-y-6 justify-around">
         {movies.map((movie) => {
           const imagePath = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
-          return (
-            <div key={movie.id} className="flex flex-col w-32 gap-y-2">
-              <img src={imagePath} />
-              <span className="text-center text-white font-bold">
-                {movie.title}
-              </span>
-            </div>
-          );
+          return <Card image={imagePath} movie={movie} />;
         })}
       </div>
     </div>
