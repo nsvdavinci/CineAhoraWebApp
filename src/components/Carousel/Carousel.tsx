@@ -31,7 +31,9 @@ export const Carousel: React.FC<{
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
         {slides.map((s, i) => (
-          <img key={`slide-${i}`} src={s} />
+          <div key={i} className="w-full flex-shrink-0">
+            <img key={`slide-${i}`} src={s} className="w-full h-full" />
+          </div>
         ))}
       </div>
       <div className="absolute inset-0 flex items-center justify-between p-4">

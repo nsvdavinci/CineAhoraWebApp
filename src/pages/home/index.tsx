@@ -27,7 +27,7 @@ export const HomePage: React.FC = () => {
   return (
     <div>
       {/* Carousel */}
-      <div className="mb-4">
+      <div className="mb-4 flex">
         <Carousel slides={slides} />
       </div>
       {/* Lista de peliculas cartelera */}
