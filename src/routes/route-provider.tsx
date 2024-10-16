@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { PATHS } from "@/routes";
 import { Layout } from "@/components/Layout";
 import { ErrorPage, HomePage, Offers, AboutUs } from "@/pages";
