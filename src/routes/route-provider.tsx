@@ -1,11 +1,11 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { PATHS } from "@/routes";
 import { Layout } from "@/components/Layout";
 import { ErrorPage, HomePage, Offers, AboutUs } from "@/pages";
 
 export const RoutesProvider = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path={PATHS.HOME} element={<Layout />}>
           <Route path={PATHS.HOME} element={<HomePage />} />
@@ -15,6 +15,6 @@ export const RoutesProvider = () => {
         {/* 404 - Error */}
         <Route path={PATHS.ERROR} element={<ErrorPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
